@@ -15,14 +15,15 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!--  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>-->
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+<!--    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
     
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,22 +36,138 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="two columns">
-        </div>
-        <div class="three columns" style="margin-top: 50px">
+         <div class="three columns" style="margin-top: 50px">
             <a class="button" href="#">Главная</a>
-          <a class="button button-primary" href="#">База данных</a>
+             <a class="button button-primary" href="#">База данных</a>
           <a class="button" href="#">Скачать</a>
           <a class="button" href="#">Новости</a>
         </div>
-        <div class="seven columns" style="margin-top: 50px">
-            База данных base
+        <div class="nine columns" style="margin-top: 50px">
+            <div id="top_title">База данных</div>
+            <div id="down_title">существительные и глаголы</div>
         </div>
     </div>
     <div class="row">
-        <p>Приветствуем вас на нашем сайте!</p>
-        <p>Если вы хотите использовать наши стимулы в своих исследованиях, пожалуйста, сошлитесь на наши работы:</p>
+        <div class="twelwe columns" style="margin-top: 50px">
+            <p>Пожалуйста, выберите характеристики для листов со стимулами.</p>
+        </div>
     </div>
+    <form>
+    <div class="row">
+        <div class="six columns" id="list" style="margin-top: 20px">
+            <p class="list_header">Лист 1</p>
+            <label class="list_title"><input name="list2_pos" type="radio" value="verb" checked> Глаголы</label>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать кол-во аргументов:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Один</label>
+                    <label><input name="part" type="radio" value="second"> Два</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать возвратность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Возвратные</label>
+                    <label><input name="part" type="radio" value="second"> Невозвратные</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать инструментальность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Инструментальные</label>
+                    <label><input name="part" type="radio" value="second"> Неинструментальные</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать именную соотнесенность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Есть</label>
+                    <label><input name="part" type="radio" value="second"> Нет</label>
+                </div>
+            </div>
+            <label class="list_title"><input name="list2_pos" type="radio" value="noun"> Существительные</label>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать часть:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Часть 1</label>
+                    <label><input name="part" type="radio" value="second"> Часть 2</label>
+                </div>
+            </div>
+        </div>
+        <div class="six columns" id="list" style="margin-top: 20px">
+            <p class="list_header">Лист 2</p>
+            <label class="list_title"><input name="list2_pos" type="radio" value="verb" checked> Глаголы</label>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать кол-во аргументов:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Один</label>
+                    <label><input name="part" type="radio" value="second"> Два</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать возвратность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Возвратные</label>
+                    <label><input name="part" type="radio" value="second"> Невозвратные</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать инструментальность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Инструментальные</label>
+                    <label><input name="part" type="radio" value="second"> Неинструментальные</label>
+                </div>
+            </div>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать именную соотнесенность:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Есть</label>
+                    <label><input name="part" type="radio" value="second"> Нет</label>
+                </div>
+            </div>
+            <label class="list_title"><input name="list2_pos" type="radio" value="noun"> Существительные</label>
+            <div class="twelwe columns" id="sub">
+                <label><input type="checkbox"> Указать часть:</input></label>
+                <div class="twelwe columns" id="sub">
+                    <label><input name="part" type="radio" value="first"> Часть 1</label>
+                    <label><input name="part" type="radio" value="second"> Часть 2</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelwe columns" style="margin-top: 20px">
+            <label class="center">Укажите размер листа: <input type="number" min="5" max="300" step="1" placeholder="30" id="list_length"></label>
+        </div>
+    </div>
+    <div class="row" id="center">
+        <div class="twelwe columns" style="margin-top: 0px">
+            <label><input name="differ" type="radio" value="true" checked> Листы не должны отличаться ни по одному из параметров</label>
+            <label><input name="differ" type="radio" value="false"> Листы должны отличаться по параметру:</label>
+            <div class="twelwe columns" id="sub">
+                  <select id="differ_parameter">
+                    <option value="noun">Устойчивость номинации</option>
+                    <option value="noun">Субъективная сложность</option>
+                    <option value="noun">Объективная сложность</option>
+                    <option value="noun">Знакомство с концептом</option>
+                    <option value="noun">Возраст усвоения</option>
+                    <option value="noun">Представимость</option>
+                    <option value="noun">Сходство с рисунком</option>
+                    <option value="noun">Частотность</option>
+                    <option value="noun">Длина в слогах</option>
+                    <option value="noun">Длина в фонемах</option>
+                  </select>
+                <label><input name="which_high" type="radio" value="first"> Лист 1 - высокие зачения, Лист 2 - низкие</label>
+                <label><input name="which_high" type="radio" value="second"> Лист 1 - низкие зачения, Лист 2 - высокие</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="three columns" style="margin-top: 20px">
+            <input class="button-primary" type="submit" value="Вперед!">       
+        </div>
+    </div>
+    </form>
   </div>
 
 <!-- End Document
