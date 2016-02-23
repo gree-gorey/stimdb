@@ -9,7 +9,7 @@ __author__ = 'Gree-gorey'
 
 def nouns():
     with codecs.open(u'noun_names.csv', u'r', u'utf-8') as f:
-        names = [line.rstrip() + u'.jpg' for line in f]
+        names = [line.rstrip() for line in f]
 
     path = u'/home/gree-gorey/stimdb/Version_20.02.16/NounsDB2.1/NounsPictures/'
 
@@ -29,11 +29,17 @@ def nouns():
 
 
 def verbs():
-    names = []
     with codecs.open(u'verb_names.csv', u'r', u'utf-8') as f:
-        for line in f:
-            line = line.rstrip().split(u'\t')
-            names.append(line[1] + u' (' + line[2] + u') #' + line[0] + u'.jpg')
+        names = [line.rstrip() for line in f]
+
+    # names = []
+    # with codecs.open(u'new_verb_names.csv', u'w', u'utf-8') as w:
+    #     with codecs.open(u'verb_names.csv', u'r', u'utf-8') as f:
+    #         for line in f:
+    #             line = line.rstrip().split(u'\t')
+    #             name = line[1] + u' (' + line[2] + u') #' + line[0] + u'.jpg'
+    #             names.append(name)
+    #             w.write(name + u'\n')
 
     # print names[5]
 
@@ -48,4 +54,4 @@ def verbs():
         #     new_name = re.sub(u'([0-9]+?)\. (.+?)\.jpg', u'\\2 #\\1.jpg', filename, flags=re.U)
         #     os.rename(path + filename, path + new_name)
 
-verbs()
+nouns()
