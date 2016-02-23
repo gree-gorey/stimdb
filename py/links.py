@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
-__author__ = 'Gree-gorey'
 
 import codecs
-import re
+
+__author__ = 'Gree-gorey'
 
 prefix = u'<a href="http://stimdb.ru/pictures/'
 suffix = u'.jpg" class="wp-live-preview" target="_blank">'
